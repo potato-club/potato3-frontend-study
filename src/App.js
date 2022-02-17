@@ -1,13 +1,11 @@
-import React, { useState } from "react";
 import logo from './logo.svg';
 import './App.css';
+import Blackboard from "./page/Blackboard";
 
 function App() {
+  
   return (
-    <div className="App">
-      <p>ต๐ม๖ละ ฤฅฦว</p>
-      <div className="board"></div>
-    </div>
+    <Blackboard />
   );
 }
 
