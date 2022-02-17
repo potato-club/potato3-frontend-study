@@ -18,6 +18,7 @@
   width: 90%;
   height: 420px;
   position: relative;
+  overflow-y: scroll;
 }
 .board span {
   position: absolute;
@@ -26,6 +27,9 @@
   transform: translate(-50%, -50%);
   font-size: 45px;
   width: 80%;
+}
+.board::-webkit-scrollbar {
+  opacity: 0;
 }
 
 .board-text {
