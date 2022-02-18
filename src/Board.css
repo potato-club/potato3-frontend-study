@@ -1,0 +1,16 @@
+.MainText {
+  text-align: center;
+  margin: auto;
+
+  width: 600px;
+  height: 300px;
+  background-color: #1e764d;
+  position: relative;
+}
+
+input {
+  text-align: center;
+  width: 593px;
+  position: absolute;
+  left: 420px;
+}

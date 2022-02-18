@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import "./Board.css";
+import { useState } from "react";
 
 function App() {
+  const [NaeYong, CNaeYong] = useState("");
+
+  const PushText = (e) => {
+    CNaeYong(e.target.value);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>디지털 칠판</h1>
+      <div className="MainText">{NaeYong}</div>
+      <input value={NaeYong} placeholder="입력해주세요" onChange={PushText} />
     </div>
   );
 }
