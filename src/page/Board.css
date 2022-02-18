@@ -5,12 +5,13 @@
   width: 600px;
   height: 300px;
   background-color: #1e764d;
+  color: white;
   position: relative;
 }
 
 input {
   text-align: center;
-  width: 593px;
+  width: 592px;
   position: absolute;
   left: 420px;
 }
