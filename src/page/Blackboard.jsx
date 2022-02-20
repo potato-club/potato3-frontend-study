@@ -21,7 +21,7 @@ export const Blackboard = () => {
     <Wrapper>
       <ContentsArea>
         {list.map((data, index) => (
-          <Contents id={index} key={index} >{data}</Contents>
+          <Contents key={index} >{data}</Contents>
         ))}
       </ContentsArea>
       <Input
